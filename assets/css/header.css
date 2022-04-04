@@ -1,0 +1,237 @@
+
+.header {
+  position: fixed;
+  /* position: sticky; */
+  /* left: 0; */
+  bottom: 0;
+  z-index: 999;
+  padding: 0.5rem;
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--second-color);
+  /* border: steelblue solid 1px; */
+  /* justify-content: space-between;  */
+  display: flex;
+  justify-content: center;
+  /* align-items: center;  */
+  }
+
+  
+.containerMenu {
+  /* margin-left: 0;
+  margin-right: 0; */
+  /* max-width: var(--max-width); */
+  width: 100%;
+  padding: 10px 0px 0px 0px;
+  /* border: steelblue solid 1px; */
+  display: flex;
+  justify-content: space-between; 
+ 
+}
+  
+.header > .containerMenu {
+  display: flex;
+  justify-content: space-between;
+
+  /* align-items: center; */
+}
+
+
+
+.logo a {
+  color: var(--gray-light-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  width: 400px;
+  /* border: steelblue solid 1px; */
+  /* margin-left: 2%; */
+  padding: 0 10px 0 10px;
+/* margin: 0 100px 0 20px;
+padding: 0; */
+}
+
+
+/* ********** Menu ********** */
+.menu-btn {
+  outline: thin solid var(--first-color);
+  border: 0;
+  cursor: pointer;
+  background-color: var(--second-color);
+}
+
+.menu-btn svg {
+  fill: var(--first-color);
+}
+
+.menu {
+  position: fixed;
+  /* left: 0; */
+  bottom: var(--header-height);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--second-color);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  margin-right: 2%;
+ 
+  /* margin: 0 100px 0 20px;
+padding: 0; */
+  }
+
+.menu.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menu a {
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  Text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: var(--gray-light-color);
+  
+}
+
+.menu a:hover {
+  color: var(--first-color);
+  background-color: var(--gray-light-color);
+  
+}
+
+@media screen and (min-width: 1024px) {
+
+    .header {
+    position: sticky;
+    top: 0;
+    padding: 0.5rem;
+    height: calc(var(--header-height) - 0.5rem);
+  }
+  
+  .logo a {
+    color: var(--gray-light-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    /* border: steelblue solid 1px; */
+    /* width: 10%;
+   margin-right: 3%; */
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .menu {
+    position: static;
+    width: auto;
+    flex-direction: row;
+    opacity: 1;
+    pointer-events: auto;
+    /* border: steelblue solid 1px; */
+    
+  }
+
+  .menu a {
+    padding: 0 1rem;
+  }
+
+  .menu a:last-child {
+    padding-right: 0;
+  }
+
+  .menu a:hover {
+    background-color: transparent;
+  }
+}
+
+
+
+/* 
+.menu{
+  position: static;
+  width: auto;
+  flex-direction: row;
+  opacity: 1;
+  pointer-events: auto;
+} */
+
+/* 
+.menu{
+  position: fixed;
+  left: 0;
+  bottom: var(--header-height);
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   background-color: var(--second-color);
+   opacity: 0;
+   pointer-events: none;
+   transition: opacity 0.5s ease;
+} */
+
+  
+    /* a los enlaces del menu  */
+  /* .menu a{
+  padding: 0 1rem;
+  }
+  
+  .menu a:last-child{
+    padding-right: 0;
+  }
+  
+  
+  .menu a:hover{
+    background-color: transparent;
+  }
+  
+
+  .menu.is-active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* enlaces del menu */
+/* .menu a {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: var(--first-color);
+  }
+
+  .menu a:hover {
+    color: var(--white-color);
+    background: var(--first-color);
+  }
+
+
+  /* menu de la hamburguesa */
+/* .menu-btn {
+  outline: thin solid var(--first-color);
+  border: 0;
+  cursor: pointer;
+  background-color: var(--second-color);
+  /* display: none; */
+/* }
+
+.menu-btn svg{
+    fill: var(--first-color);
+}
+
+
+
+
+
+    /* boton hamburguesa */
+    /* .menu-btn{
+      display: none;
+    }
+   */ 

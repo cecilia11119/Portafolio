@@ -1,0 +1,72 @@
+.formacion-section {
+    padding: 8rem 1rem;
+  }
+
+  
+  .formacion-parrafo {
+     width: 100%;
+    /* color: var(--white-color); */
+    Line-height: 150%;
+   /* position: relative;
+    margin-top: 10px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: Raleway;
+    font-weight: Regular;  */
+    font-size: 0.9rem;
+    opacity: 1;
+    text-align: justify;
+    /* font-weight: bold; */
+    /* padding-left: 0px;
+    padding-top: 0px;   
+    padding-bottom: 0px; */
+    /* padding: 0px 16px 0px 1rem;
+     */
+  }
+
+
+  @media screen and (min-width: 768px){
+    .about {
+      display: grid;
+      grid-template-columns: repeat(3, 30%);
+      /* display: block; */
+      justify-content: space-between;
+      align-content: center;
+      }
+    
+
+      .full-lg-screen {
+        width: 100%;
+        min-height: 100vh;
+      }
+    
+      .text-lg-center {
+        text-align: center;
+      }
+    
+      .text-lg-left {
+        text-align: left;
+      }
+    
+      .text-lg-right {
+        text-align: right;
+      }
+    
+      
+    
+    }
+
+  
+
+
+  @media screen and (min-width: 1024px){
+    .about {
+      display: grid;
+      grid-template-columns: repeat(3, 30%);
+      /* display: block; */
+      justify-content: space-between;
+      align-content: center;
+      }
+    
+  }
